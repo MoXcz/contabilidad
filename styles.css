@@ -539,4 +539,375 @@ details[open] .category-summary::after {
         font-size: 1rem;
         padding-left: 15px;
     }
+    
+    .journal-table {
+        font-size: 0.8rem;
+    }
+    
+    .journal-table th,
+    .journal-table td {
+        padding: 4px 3px;
+    }
+    
+    .journal-table th {
+        font-size: 0.75rem;
+    }
+    
+    .journal-entry h4 {
+        font-size: 1.1rem;
+        padding: 12px 15px;
+    }
+    
+    .back-button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+    
+    .concept-summary {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+        padding: 15px;
+    }
+    
+    .concept-summary h3 {
+        font-size: 1.2rem;
+    }
+    
+    .concept-content {
+        padding: 15px;
+    }
+    
+    .concept-content h4 {
+        font-size: 1.1rem;
+        padding-left: 12px;
+    }
+    
+    .practice-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .practice-card {
+        padding: 20px;
+    }
+    
+    .practice-title {
+        font-size: 1.2rem;
+    }
+    
+    .practice-description {
+        font-size: 0.9rem;
+    }
+    
+    .unit-preview {
+        padding: 20px;
+    }
+    
+    .unit-link {
+        padding: 12px 24px;
+        font-size: 1rem;
+    }
+}
+
+/* Estilos para el libro de diario */
+.journal-entries {
+    margin: 30px 0;
+}
+
+.journal-entry {
+    background: white;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 25px;
+}
+
+.journal-entry h4 {
+    background: #495057;
+    color: white;
+    margin: 0;
+    padding: 15px 20px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.journal-table {
+    overflow-x: auto;
+}
+
+.journal-table table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+}
+
+.journal-table th {
+    background: #f8f9fa;
+    color: #495057;
+    padding: 12px 8px;
+    text-align: center;
+    font-weight: 600;
+    border: 1px solid #dee2e6;
+    font-size: 0.85rem;
+}
+
+.journal-table td {
+    padding: 10px 8px;
+    text-align: left;
+    border: 1px solid #dee2e6;
+    vertical-align: top;
+}
+
+.journal-table td:first-child {
+    text-align: center;
+    font-weight: 600;
+    color: #495057;
+}
+
+.journal-table td:nth-child(2) {
+    text-align: center;
+    font-weight: 500;
+}
+
+.journal-table td:nth-child(3) {
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+.journal-table .debit {
+    color: #28a745;
+    font-weight: 600;
+    text-align: right;
+}
+
+.journal-table .credit {
+    color: #dc3545;
+    font-weight: 600;
+    text-align: right;
+}
+
+.journal-table .separator {
+    background: #f8f9fa;
+    height: 20px;
+}
+
+.journal-table .separator td {
+    border: none;
+    background: #f8f9fa;
+}
+
+.explanation-section {
+    background: #e9ecef;
+    color: #495057;
+    padding: 25px;
+    border-radius: 8px;
+    margin: 25px 0;
+    border: 1px solid #dee2e6;
+}
+
+.explanation-section h4 {
+    color: #2c3e50;
+    border-left: 3px solid #495057;
+    padding-left: 15px;
+    margin-bottom: 15px;
+}
+
+/* Estilos para el botón de regresar */
+.back-button-container {
+    margin-bottom: 20px;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #6c757d;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 1px solid #6c757d;
+}
+
+.back-button:hover {
+    background: #495057;
+    border-color: #495057;
+    transform: translateY(-1px);
+}
+
+/* Estilos para las secciones de conceptos */
+.concept-section {
+    margin-bottom: 25px;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.concept-summary {
+    background: #f8f9fa;
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid #e9ecef;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.concept-summary:hover {
+    background: #e9ecef;
+}
+
+.concept-summary::-webkit-details-marker {
+    display: none;
+}
+
+.concept-summary::after {
+    content: '▼';
+    font-size: 1.2rem;
+    color: #6c757d;
+    transition: transform 0.3s ease;
+}
+
+details[open] .concept-summary::after {
+    transform: rotate(180deg);
+}
+
+.concept-summary h3 {
+    margin: 0;
+    color: #2c3e50;
+    font-size: 1.4rem;
+    padding-bottom: 0;
+    border-bottom: none;
+    display: inline;
+}
+
+.concept-description {
+    color: #6c757d;
+    font-size: 0.95rem;
+    font-style: italic;
+}
+
+.concept-content {
+    padding: 20px;
+    background: white;
+}
+
+.concept-content h4 {
+    color: #495057;
+    font-size: 1.2rem;
+    margin: 20px 0 12px 0;
+    padding-left: 15px;
+    border-left: 3px solid #6c757d;
+}
+
+.concept-content h4:first-child {
+    margin-top: 0;
+}
+
+/* Estilos para las prácticas */
+.practice-links {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 2px solid #e9ecef;
+}
+
+.practice-links h3 {
+    color: #2c3e50;
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.practice-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.practice-card {
+    background: white;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 25px;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.practice-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    border-color: #495057;
+}
+
+.practice-number {
+    background: #495057;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.practice-title {
+    color: #2c3e50;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.practice-description {
+    color: #6c757d;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Estilos para la vista previa de la unidad */
+.unit-preview {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+    margin-top: 20px;
+}
+
+.unit-preview ul {
+    margin-bottom: 25px;
+}
+
+.unit-preview li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+.unit-link-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.unit-link {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #495057;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    border: 2px solid #495057;
+}
+
+.unit-link:hover {
+    background: #2c3e50;
+    border-color: #2c3e50;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }

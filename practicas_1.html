@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Práctica #1 - Constitución de Empresa - Contabilidad para Ingenieros
+    </title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="content-card">
+        <div class="back-button-container">
+          <a href="unidad_1.html" class="back-button">← Regresar a Unidad 1</a>
+        </div>
+        <h2>Práctica #1: Constitución de Empresa</h2>
+        <p>
+          La empresa <strong>La Gran Oportunidad SA de CV</strong> se constituye
+          el 1 de Abril del 2025 con el siguiente capital:
+        </p>
+
+        <div class="highlight-box">
+          <ul>
+            <li><strong>Caja:</strong> $2,000</li>
+            <li><strong>Bancos:</strong> $3,500,000</li>
+          </ul>
+        </div>
+
+        <h3>Transacciones Realizadas</h3>
+        <ol>
+          <li>
+            <strong>3 de Abril:</strong> Rentamos un local por $150,000 +IVA y
+            realizamos una transferencia electrónica, recibo número 595
+          </li>
+          <li>
+            <strong>4 de Abril:</strong> Compramos mobiliario y equipo por
+            $60,000 +IVA y nos otorga crédito factura número 2950
+          </li>
+          <li>
+            <strong>5 de Abril:</strong> Compramos 3 computadoras por $80,000
+            +IVA y pagamos con cheque número 01 factura 80015
+          </li>
+          <li>
+            <strong>6 de Abril:</strong> Compramos mercancías por $1,000,000
+            +IVA, por el 30% pagamos con cheque número 02 y por el resto nos
+            otorgaron crédito, factura 9090
+          </li>
+        </ol>
+
+        <h3>Libro de Diario</h3>
+        <div class="journal-entries">
+          <div class="journal-entry">
+            <h4>La Gran Oportunidad SA de CV</h4>
+            <div class="journal-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>No.</th>
+                    <th>Fecha</th>
+                    <th>Cuenta</th>
+                    <th>Debe</th>
+                    <th>Haber</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>A</td>
+                    <td>01 de Abril</td>
+                    <td>Caja</td>
+                    <td class="debit">$2,000</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Bancos</td>
+                    <td class="debit">$3,500,000</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Capital Social</td>
+                    <td></td>
+                    <td class="credit">$3,502,000</td>
+                  </tr>
+
+                  <tr class="separator">
+                    <td colspan="5"></td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>03 de Abril</td>
+                    <td>Renta Pago por Anticipo</td>
+                    <td class="debit">$150,000</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td>IVA Acreditable</td>
+                    <td class="debit">$24,000</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Bancos</td>
+                    <td></td>
+                    <td class="credit">$174,000</td>
+                  </tr>
+                  <tr>
+                    <td colspan="5">Pago renta R/595, TE</td>
+                  </tr>
+                  <tr class="separator">
+                    <td colspan="5"></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>04 de Abril</td>
+                    <td>Mobiliario y Equipo</td>
+                    <td class="debit">$60,000</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td>IVA Acreditable</td>
+                    <td class="debit">$9,600</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Acreedores Diversos</td>
+                    <td></td>
+                    <td class="credit">$69,600</td>
+                  </tr>
+                  <tr>
+                    <td colspan="5">Compra F/2950, a crédito</td>
+                  </tr>
+                  <tr class="separator">
+                    <td colspan="5"></td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>05 de Abril</td>
+                    <td>Equipo de Cómputo</td>
+                    <td class="debit">$80,000</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td>IVA Acreditable</td>
+                    <td class="debit">$12,800</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Bancos</td>
+                    <td></td>
+                    <td class="credit">$92,800</td>
+                  </tr>
+
+                  <tr>
+                    <td colspan="5">Compra F/80015, con cheque número 01</td>
+                  </tr>
+                  <tr class="separator">
+                    <td colspan="5"></td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>06 de Abril</td>
+                    <td>Inventarios</td>
+                    <td class="debit">$1,000,000</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td>IVA Acreditable</td>
+                    <td class="debit">$160,000</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Bancos</td>
+                    <td></td>
+                    <td class="credit">$348,000</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Proveedores</td>
+                    <td></td>
+                    <td class="credit">$812,000</td>
+                  </tr>
+                  <tr>
+                    <td colspan="5">
+                      Compra F/9090, con cheque número 02 y a crédito
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
