@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Práctica #2 - Operaciones Comerciales - Contabilidad para Ingenieros
+    </title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="cuentas.html">Plan de Cuentas</a></li>
+          <li><a href="unidad_1.html">Unidad 1</a></li>
+        </ul>
+      </nav>
+
+      <div class="content-card">
+        <div class="back-button-container">
+          <a href="unidad_1.html" class="back-button">← Regresar a Unidad 1</a>
+        </div>
+        <h2>Práctica #2: Operaciones Comerciales</h2>
+        <p>
+          La empresa <strong>Corales SA de CV</strong> se constituye el 19 de
+          abril de 2023 con el siguiente capital:
+        </p>
+
+        <div class="highlight-box">
+          <h4>Capital Inicial</h4>
+          <ul>
+            <li><strong>Bancos:</strong> $2,700,000</li>
+            <li><strong>Caja:</strong> $5,000</li>
+          </ul>
+        </div>
+
+        <h3>Transacciones Realizadas</h3>
+        <ol>
+          <li>
+            <strong>19 de Abril:</strong> Compramos un vehículo para reparto por
+            $175,000 + IVA, por el 25% firmamos un pagaré No. 299 y por el resto
+            nos otorgan un financiamiento, factura No. 11092-B
+          </li>
+          <li>
+            <strong>19 de Abril:</strong> Compramos mercancías por $815,000 IVA
+            incluido, realizamos un pago por el 68% con cheque No. 001, y por el
+            resto nos otorgan crédito. Factura No. 8591-B
+          </li>
+          <li>
+            <strong>20 de Abril:</strong> Compramos mobiliario y equipo por
+            $90,000 + IVA realizamos cheque No. 002, factura No. 14155
+          </li>
+          <li>
+            <strong>20 de Abril:</strong> Rentamos una oficina por $60,000 + IVA
+            y realizamos transferencia electrónica, recibo No. 6592
+          </li>
+          <li>
+            <strong>20 de Abril:</strong> Compramos 5 computadoras por $80,000 +
+            IVA y realizamos depósito, factura No. 7590
+          </li>
+          <li>
+            <strong>21 de Abril:</strong> Vendimos mercancías por $600,000 IVA
+            incluido, por el 35% nos realizan una transferencia electrónica, por
+            el 30% otorgamos crédito y por el resto nos firman letra de cambio
+            11923. Costo de ventas 80%. Factura 0001
+          </li>
+          <li>
+            <strong>22 de Abril:</strong> Pagamos el 20% de la factura No.
+            8591-B con transferencia electrónica
+          </li>
+          <li>
+            <strong>24 de Abril:</strong> Nos liquidan el crédito de la factura
+            0001
+          </li>
+          <li>
+            <strong>24 de Abril:</strong> Compramos mercancías por $300,000 +
+            IVA a crédito, factura No. 12458
+          </li>
+        </ol>
+
+        <h3>Libro de Diario</h3>
+        <div class="journal-entries">
+          <div class="journal-entry">
+            <h4>Corales SA de CV</h4>
+            <div class="journal-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>No.</th>
+                    <th>Fecha</th>
+                    <th>Cuenta</th>
+                    <th>Debe</th>
+                    <th>Haber</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>19 de Abril</td>
+                    <td>Bancos</td>
+                    <td class="debit">$2,700,000</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Caja</td>
+                    <td class="debit">$5,000</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Capital Social</td>
+                    <td></td>
+                    <td class="credit">$2,705,000</td>
+                  </tr>
+                  <tr class="separator">
+                    <td colspan="5"></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>19 de Abril</td>
+                    <td>Equipo de Transporte</td>
+                    <td class="debit">$175,000</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td>IVA por Acreditar</td>
+                    <td class="debit">$28,000</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Documentos por Pagar</td>
+                    <td></td>
+                    <td class="credit">$50,750</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Préstamos Bancarios a Largo Plazo</td>
+                    <td></td>
+                    <td class="credit">$152,250</td>
+                  </tr>
+                  <tr>
+                    <td colspan="5">
+                      Compra vehículo F/11092-B, pagaré 299 y financiamiento
+                    </td>
+                  </tr>
+                  <tr class="separator">
+                    <td colspan="5"></td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>19 de Abril</td>
+                    <td>Mercancías</td>
+                    <td class="debit">$702,586</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td>IVA Acreditable</td>
+                    <td class="debit">$67,448</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td>IVA por Acreditar</td>
+                    <td class="debit">$44,966</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Bancos</td>
+                    <td></td>
+                    <td class="credit">$554,200</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Proveedores</td>
+                    <td></td>
+                    <td class="credit">$260,800</td>
+                  </tr>
+                  <tr>
+                    <td colspan="5">
+                      Compra mercancías F/8591-B, cheque 001 y crédito
+                    </td>
+                  </tr>
+                  <tr class="separator">
+                    <td colspan="5"></td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>20 de Abril</td>
+                    <td>Mobiliario y Equipo</td>
+                    <td class="debit">$90,000</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td>IVA Acreditable</td>
+                    <td class="debit">$14,400</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Bancos</td>
+                    <td></td>
+                    <td class="credit">$104,400</td>
+                  </tr>
+                  <tr>
+                    <td colspan="5">Compra mobiliario F/14155, cheque 002</td>
+                  </tr>
+                  <tr class="separator">
+                    <td colspan="5"></td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>20 de Abril</td>
+                    <td>Renta pago por Anticipo</td>
+                    <td class="debit">$60,000</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td>IVA Acreditable</td>
+                    <td class="debit">$9,600</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Bancos</td>
+                    <td></td>
+                    <td class="credit">$69,600</td>
+                  </tr>
+                  <tr>
+                    <td colspan="5">Renta oficina R/6592, TE</td>
+                  </tr>
+                  <tr class="separator">
+                    <td colspan="5"></td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>20 de Abril</td>
+                    <td>Equipo de Cómputo</td>
+                    <td class="debit">$80,000</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td>IVA Acreditable</td>
+                    <td class="debit">$12,800</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Bancos</td>
+                    <td></td>
+                    <td class="credit">$92,800</td>
+                  </tr>
+                  <tr>
+                    <td colspan="5">Compra computadoras F/7590, depósito</td>
+                  </tr>
+                  <tr class="separator">
+                    <td colspan="5"></td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>21 de Abril</td>
+                    <td>Bancos</td>
+                    <td class="debit">$210,000</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Clientes</td>
+                    <td class="debit">$180,000</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Documentos por Cobrar</td>
+                    <td class="debit">$210,000</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Ventas</td>
+                    <td></td>
+                    <td class="credit">$517,241</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td>IVA por Pagar</td>
+                    <td></td>
+                    <td class="credit">$82,759</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Costo de Ventas</td>
+                    <td class="debit">$413,793</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Mercancías</td>
+                    <td></td>
+                    <td class="credit">$413,793</td>
+                  </tr>
+                  <tr>
+                    <td colspan="5">
+                      Venta mercancías F/0001, TE, crédito y letra 11923
+                    </td>
+                  </tr>
+                  <tr class="separator">
+                    <td colspan="5"></td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>22 de Abril</td>
+                    <td>Proveedores</td>
+                    <td class="debit">$52,160</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Bancos</td>
+                    <td></td>
+                    <td class="credit">$52,160</td>
+                  </tr>
+                  <tr>
+                    <td colspan="5">Pago 20% F/8591-B, TE</td>
+                  </tr>
+                  <tr class="separator">
+                    <td colspan="5"></td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>24 de Abril</td>
+                    <td>Bancos</td>
+                    <td class="debit">$180,000</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Clientes</td>
+                    <td></td>
+                    <td class="credit">$180,000</td>
+                  </tr>
+                  <tr>
+                    <td colspan="5">Liquidación crédito F/0001</td>
+                  </tr>
+                  <tr class="separator">
+                    <td colspan="5"></td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>24 de Abril</td>
+                    <td>Mercancías</td>
+                    <td class="debit">$300,000</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td>IVA Acreditable</td>
+                    <td class="debit">$48,000</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Proveedores</td>
+                    <td></td>
+                    <td class="credit">$348,000</td>
+                  </tr>
+                  <tr>
+                    <td colspan="5">Compra mercancías F/12458, a crédito</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3"></td>
+                    <td>$5,494,153</td>
+                    <td>$5,494,153</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
