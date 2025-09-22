@@ -349,31 +349,6 @@ details[open] .category-summary::after {
   margin: 20px 0;
 }
 
-.engineering-note {
-  background: #fff3cd;
-  color: #856404;
-  padding: 20px;
-  border-radius: 8px;
-  margin: 20px 0;
-  border: 1px solid #ffeaa7;
-}
-
-.engineering-note h4 {
-  color: #856404;
-  margin-bottom: 10px;
-}
-
-.engineering-note ul {
-  color: #856404;
-  margin: 15px 0;
-  padding-left: 25px;
-}
-
-.engineering-note li {
-  margin-bottom: 8px;
-  line-height: 1.4;
-}
-
 .t-account-example {
   margin: 25px 0;
   padding: 20px;
