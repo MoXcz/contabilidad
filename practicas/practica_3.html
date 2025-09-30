@@ -1,0 +1,973 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Práctica #3 - Operaciones Comerciales Avanzadas - Contabilidad para
+      Ingenieros
+    </title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="../cuentas.html">Plan de Cuentas</a></li>
+          <li><a href="../unidad_1.html">Unidad 1</a></li>
+        </ul>
+      </nav>
+
+      <div class="content-card">
+        <div class="back-button-container">
+          <a href="../unidad_1.html" class="back-button">← Regresar a Unidad 1</a>
+        </div>
+        <h2>Práctica #3: Operaciones Comerciales Avanzadas</h2>
+        <p>
+          La empresa <strong>INTERNACIONAL DEL CAFÉ SA DE CV</strong> se
+          constituye el 30 de junio de 2024 con el siguiente capital:
+        </p>
+
+        <div class="highlight-box">
+          <h4>Capital Inicial</h4>
+          <ul>
+            <li><strong>Bancos:</strong> $5,000,000</li>
+          </ul>
+        </div>
+
+        <h3>Transacciones Realizadas</h3>
+        <ol>
+          <li>
+            <strong>01 de Julio:</strong> Se compra un local por $1,500,000 +
+            IVA y por el 40% se realiza una transferencia electrónica por el
+            resto nos realizan crédito, Factura 140987B
+          </li>
+          <li>
+            <strong>02 de Julio:</strong> Se compran 5 escritorios con un valor
+            de $15,000 + IVA cada uno, 5 sillas ejecutivas con un valor de
+            $3,800 + IVA cada uno y 2 libreros por $8,000 + IVA, por el 40%
+            realizamos cheque No. 100, por el 30% nos otorgan crédito y el resto
+            firmamos un pagaré No. 10987, factura 29854
+          </li>
+          <li>
+            <strong>04 de Julio:</strong> Se compran mercancías por $2,000,000 +
+            IVA, por el 50% realizamos una transferencia electrónica y por el
+            resto nos otorgan crédito, factura No. 49876
+          </li>
+          <li>
+            <strong>05 de Julio:</strong> Vendimos mercancías por $800,000 +
+            IVA, por el 30% nos realizaron cheque y por el resto nos realizaron
+            transferencia electrónica, factura No. 001, costo de ventas 70%
+          </li>
+          <li>
+            <strong>06 de Julio:</strong> Se compran 5 laptops por $130,000 +
+            IVA y se realiza el cheque No. 101, factura No 2654
+          </li>
+          <li>
+            <strong>09 de Julio:</strong> Se venden mercancías por $350,000 IVA
+            incluido por el 40% nos realizan transferencia electrónica y por el
+            resto otorgamos crédito, factura No. 002, costo de ventas 70%
+          </li>
+          <li>
+            <strong>10 de Julio:</strong> Se paga el 20% de la factura No.
+            140987B con cheque No. 102
+          </li>
+          <li>
+            <strong>11 de Julio:</strong> Se venden mercancías por $200,000 +
+            IVA y nos realizan transferencia electrónica, factura No. 003, costo
+            de ventas 70%
+          </li>
+          <li>
+            <strong>11 de Julio:</strong> Nos pagan el 15% de la factura No.
+            002, con cheque
+          </li>
+        </ol>
+
+        <details class="practice-section">
+          <summary class="practice-summary">
+            <h3>Libro de Diario</h3>
+            <span class="practice-description">Registro cronológico de todas las transacciones</span>
+          </summary>
+          <div class="journal-entries">
+            <div class="journal-entry">
+              <h4>INTERNACIONAL DEL CAFÉ SA DE CV</h4>
+              <div class="journal-table">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>No.</th>
+                      <th>Fecha</th>
+                      <th>Cuenta</th>
+                      <th>Debe</th>
+                      <th>Haber</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>30 de Junio</td>
+                      <td>Bancos</td>
+                      <td class="debit">$5,000,000</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td>Capital Social</td>
+                      <td></td>
+                      <td class="credit">$5,000,000</td>
+                    <tr>
+                      <td colspan="5">Apertura de Empresa</td>
+                    </tr>
+
+                    </tr>
+                    <tr class="separator">
+                      <td colspan="5"></td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>01 de Julio</td>
+                      <td>Edificios</td>
+                      <td class="debit">$1,500,000</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td>IVA Acreditado</td>
+                      <td class="debit">$96,000</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td>IVA por Acreditar</td>
+                      <td class="debit">$144,000</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td>Bancos</td>
+                      <td></td>
+                      <td class="credit">$696,000</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td>Acreedores Diversos</td>
+                      <td></td>
+                      <td class="credit">$1,044,000</td>
+                    </tr>
+                    <tr>
+                      <td colspan="5">
+                        Compra local F/140987B, 40% TE y 60% crédito
+                      </td>
+                    </tr>
+                    <tr class="separator">
+                      <td colspan="5"></td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>02 de Julio</td>
+                      <td>Mobiliario y Equipo</td>
+                      <td class="debit">$110,000</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td>IVA Acreditado</td>
+                      <td class="debit">$17,600</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td>Bancos</td>
+                      <td></td>
+                      <td class="credit">$51,040</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td>Acreedores Diversos</td>
+                      <td></td>
+                      <td class="credit">$38,280</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td>Documentos por Pagar</td>
+                      <td></td>
+                      <td class="credit">$38,280</td>
+                    </tr>
+                    <tr>
+                      <td colspan="5">
+                        Compra mobiliario F/29854, 40% cheque, 30% crédito, 30%
+                        pagaré
+                      </td>
+                    </tr>
+                    <tr class="separator">
+                      <td colspan="5"></td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>04 de Julio</td>
+                      <td>Mercancías</td>
+                      <td class="debit">$2,000,000</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td>IVA Acreditado</td>
+                      <td class="debit">$160,000</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td>IVA por Acreditar</td>
+                      <td class="debit">$160,000</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td>Bancos</td>
+                      <td></td>
+                      <td class="credit">$1,160,000</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td>Proveedores</td>
+                      <td></td>
+                      <td class="credit">$1,160,000</td>
+                    </tr>
+                    <tr>
+                      <td colspan="5">
+                        Compra mercancías F/49876, 50% TE y 50% crédito
+                      </td>
+                    </tr>
+                    <tr class="separator">
+                      <td colspan="5"></td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>05 de Julio</td>
+                      <td>Bancos</td>
+                      <td class="debit">$928,000</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td>Ventas</td>
+                      <td></td>
+                      <td class="credit">$800,000</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td>IVA Trasladado</td>
+                      <td></td>
+                      <td class="credit">$128,000</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td>Costo de Ventas</td>
+                      <td class="debit">$560,000</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td>Mercancías</td>
+                      <td></td>
+                      <td class="credit">$560,000</td>
+                    </tr>
+                    <tr>
+                      <td colspan="5">
+                        Venta mercancías F/001, 30% cheque y 70% TE
+                      </td>
+                    </tr>
+                    <tr class="separator">
+                      <td colspan="5"></td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td>06 de Julio</td>
+                      <td>Equipo de Cómputo</td>
+                      <td class="debit">$130,000</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td>IVA Acreditado</td>
+                      <td class="debit">$20,800</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td>Bancos</td>
+                      <td></td>
+                      <td class="credit">$150,800</td>
+                    </tr>
+                    <tr>
+                      <td colspan="5">Compra laptops F/2654, cheque 101</td>
+                    </tr>
+                    <tr class="separator">
+                      <td colspan="5"></td>
+                    </tr>
+                    <tr>
+                      <td>7</td>
+                      <td>09 de Julio</td>
+                      <td>Bancos</td>
+                      <td class="debit">$140,000</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td>Clientes</td>
+                      <td class="debit">$210,000</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td>Ventas</td>
+                      <td></td>
+                      <td class="credit">$301,724.14</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td>IVA Trasladado</td>
+                      <td></td>
+                      <td class="credit">$19,310.34</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td>IVA por Trasladar</td>
+                      <td></td>
+                      <td class="credit">$28,965.52</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td>Costo de Ventas</td>
+                      <td class="debit">$211,206.88</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td>Mercancías</td>
+                      <td></td>
+                      <td class="credit">$211,206.88</td>
+                    </tr>
+                    <tr>
+                      <td colspan="5">
+                        Venta mercancías F/002, 40% TE y 60% crédito
+                      </td>
+                    </tr>
+                    <tr class="separator">
+                      <td colspan="5"></td>
+                    </tr>
+                    <tr>
+                      <td>8</td>
+                      <td>10 de Julio</td>
+                      <td>Acreedores Diversos</td>
+                      <td class="debit">$208,800</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td>Bancos</td>
+                      <td></td>
+                      <td class="credit">$208,800</td>
+                    </tr>
+<tr>
+                      <td></td>
+                      <td></td>
+                      <td>IVA Acreditable</td>
+                      <td class="debit">$28,800</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+   <tr>
+                      <td></td>
+                      <td></td>
+                      <td>IVA por Acreditar</td>
+                      <td></td>
+                      <td class="credit">$28,800</td>
+                    </tr>
+                    <tr>
+                      <td colspan="5">Pago 20% F/140987B, cheque 102</td>
+                    </tr>
+                    <tr class="separator">
+                      <td colspan="5"></td>
+                    </tr>
+                    <tr>
+                      <td>9</td>
+                      <td>11 de Julio</td>
+                      <td>Bancos</td>
+                      <td class="debit">$232,000</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td>Ventas</td>
+                      <td></td>
+                      <td class="credit">$200,000</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td>IVA Trasladado</td>
+                      <td></td>
+                      <td class="credit">$32,000</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td>Costo de Ventas</td>
+                      <td class="debit">$140,000</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td>Mercancías</td>
+                      <td></td>
+                      <td class="credit">$140,000</td>
+                    </tr>
+                    <tr>
+                      <td colspan="5">Venta mercancías F/003, TE</td>
+                    </tr>
+                    <tr class="separator">
+                      <td colspan="5"></td>
+                    </tr>
+                    <tr>
+                      <td>10</td>
+                      <td>11 de Julio</td>
+                      <td>Bancos</td>
+                      <td class="debit">$31,500</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td>Clientes</td>
+                      <td></td>
+                      <td class="credit">$31,500</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td>IVA por Trasladar</td>
+                      <td class="debit">$4,344.83</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td>IVA Trasladado</td>
+                      <td></td>
+                      <td class="credit">$4,344.83</td>
+                    </tr>
+                    <tr>
+                      <td colspan="5">Pago 15% F/002, cheque</td>
+                    </tr>
+                    <tr>
+                      <td colspan="3"></td>
+                      <td>$11,976,504.83</td>
+                      <td>$11,976,504.83</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details class="practice-section">
+          <summary class="practice-summary">
+            <h3>Libro Mayor</h3>
+            <span class="practice-description">Cuentas T con movimientos y saldos</span>
+          </summary>
+          <div class="t-accounts">
+            <div class="t-account">
+              <h4>Bancos</h4>
+              <div class="t-account-content">
+                <div class="debit-side">
+                  <div class="t-account-header">DEBE</div>
+                  <div class="t-account-entry">(1) $5,000,000</div>
+                  <div class="t-account-entry">(5) $928,000</div>
+                  <div class="t-account-entry">(7) $140,000</div>
+                  <div class="t-account-entry">(9) $232,000</div>
+                  <div class="t-account-entry">(10) $31,500</div>
+                  <div class="t-account-total">Total: $6,331,500</div>
+                </div>
+                <div class="credit-side">
+                  <div class="t-account-header">HABER</div>
+                  <div class="t-account-entry">(2) $696,000</div>
+                  <div class="t-account-entry">(3) $51,040</div>
+                  <div class="t-account-entry">(4) $1,160,000</div>
+                  <div class="t-account-entry">(6) $150,800</div>
+                  <div class="t-account-entry">(8) $208,800</div>
+                  <div class="t-account-total">Total: $2,266,640</div>
+                </div>
+              </div>
+              <div class="t-account-balance">Saldo: $4,064,860 (Deudor)</div>
+            </div>
+
+            <div class="t-account">
+              <h4>Capital Social</h4>
+              <div class="t-account-content">
+                <div class="debit-side">
+                  <div class="t-account-header">DEBE</div>
+                  <div class="t-account-total">Total: $0</div>
+                </div>
+                <div class="credit-side">
+                  <div class="t-account-header">HABER</div>
+                  <div class="t-account-entry">(1) $5,000,000</div>
+                  <div class="t-account-total">Total: $5,000,000</div>
+                </div>
+              </div>
+              <div class="t-account-balance">Saldo: $5,000,000 (Acreedor)</div>
+            </div>
+
+            <div class="t-account">
+              <h4>Edificios</h4>
+              <div class="t-account-content">
+                <div class="debit-side">
+                  <div class="t-account-header">DEBE</div>
+                  <div class="t-account-entry">(2) $1,500,000</div>
+                  <div class="t-account-total">Total: $1,500,000</div>
+                </div>
+                <div class="credit-side">
+                  <div class="t-account-header">HABER</div>
+                  <div class="t-account-total">Total: $0</div>
+                </div>
+              </div>
+              <div class="t-account-balance">Saldo: $1,500,000 (Deudor)</div>
+            </div>
+
+            <div class="t-account">
+              <h4>IVA Acreditado</h4>
+              <div class="t-account-content">
+                <div class="debit-side">
+                  <div class="t-account-header">DEBE</div>
+                  <div class="t-account-entry">(2) $96,000</div>
+                  <div class="t-account-entry">(3) $8,576</div>
+                  <div class="t-account-entry">(4) $160,000</div>
+                  <div class="t-account-entry">(6) $20,800</div>
+                  <div class="t-account-entry">(8) $28,800</div>
+                  <div class="t-account-total">Total: $314,176</div>
+                </div>
+                <div class="credit-side">
+                  <div class="t-account-header">HABER</div>
+                  <div class="t-account-total">Total: $0</div>
+                </div>
+              </div>
+              <div class="t-account-balance">Saldo: $314,176 (Deudor)</div>
+            </div>
+
+            <div class="t-account">
+              <h4>IVA por Acreditar</h4>
+              <div class="t-account-content">
+                <div class="debit-side">
+                  <div class="t-account-header">DEBE</div>
+                  <div class="t-account-entry">(2) $144,000</div>
+                  <div class="t-account-entry">(4) $160,000</div>
+                  <div class="t-account-total">Total: $304,000</div>
+                </div>
+                <div class="credit-side">
+                  <div class="t-account-header">HABER</div>
+                  <div class="t-account-entry">(8) $28,800</div>
+                  <div class="t-account-total">Total: $28,800</div>
+                </div>
+              </div>
+              <div class="t-account-balance">Saldo: $275,200 (Deudor)</div>
+            </div>
+
+            <div class="t-account">
+              <h4>Acreedores Diversos</h4>
+              <div class="t-account-content">
+                <div class="debit-side">
+                  <div class="t-account-header">DEBE</div>
+                  <div class="t-account-entry">(8) $208,800</div>
+                  <div class="t-account-total">Total: $208,800</div>
+                </div>
+                <div class="credit-side">
+                  <div class="t-account-header">HABER</div>
+                  <div class="t-account-entry">(2) $1,044,000</div>
+                  <div class="t-account-entry">(3) $46,632</div>
+                  <div class="t-account-total">Total: $1,090,632</div>
+                </div>
+              </div>
+              <div class="t-account-balance">Saldo: $881,832 (Acreedor)</div>
+            </div>
+
+            <div class="t-account">
+              <h4>Documentos por Pagar</h4>
+              <div class="t-account-content">
+                <div class="debit-side">
+                  <div class="t-account-header">DEBE</div>
+                  <div class="t-account-total">Total: $0</div>
+                </div>
+                <div class="credit-side">
+                  <div class="t-account-header">HABER</div>
+                  <div class="t-account-entry">(3) $46,632</div>
+                  <div class="t-account-total">Total: $46,632</div>
+                </div>
+              </div>
+              <div class="t-account-balance">Saldo: $46,632 (Acreedor)</div>
+            </div>
+
+            <div class="t-account">
+              <h4>Mobiliario y Equipo</h4>
+              <div class="t-account-content">
+                <div class="debit-side">
+                  <div class="t-account-header">DEBE</div>
+                  <div class="t-account-entry">(3) $110,000</div>
+                  <div class="t-account-total">Total: $110,000</div>
+                </div>
+                <div class="credit-side">
+                  <div class="t-account-header">HABER</div>
+                  <div class="t-account-total">Total: $0</div>
+                </div>
+              </div>
+              <div class="t-account-balance">Saldo: $110,000 (Deudor)</div>
+            </div>
+
+            <div class="t-account">
+              <h4>Mercancías</h4>
+              <div class="t-account-content">
+                <div class="debit-side">
+                  <div class="t-account-header">DEBE</div>
+                  <div class="t-account-entry">(4) $2,000,000</div>
+                  <div class="t-account-total">Total: $2,000,000</div>
+                </div>
+                <div class="credit-side">
+                  <div class="t-account-header">HABER</div>
+                  <div class="t-account-entry">(5) $560,000</div>
+                  <div class="t-account-entry">(7) $211,206.88</div>
+                  <div class="t-account-entry">(9) $140,000</div>
+                  <div class="t-account-total">Total: $911,206.88</div>
+                </div>
+              </div>
+              <div class="t-account-balance">Saldo: $1,088,793.12 (Deudor)</div>
+            </div>
+
+            <div class="t-account">
+              <h4>Proveedores</h4>
+              <div class="t-account-content">
+                <div class="debit-side">
+                  <div class="t-account-header">DEBE</div>
+                  <div class="t-account-total">Total: $0</div>
+                </div>
+                <div class="credit-side">
+                  <div class="t-account-header">HABER</div>
+                  <div class="t-account-entry">(4) $1,160,000</div>
+                  <div class="t-account-total">Total: $1,160,000</div>
+                </div>
+              </div>
+              <div class="t-account-balance">Saldo: $1,160,000 (Acreedor)</div>
+            </div>
+
+            <div class="t-account">
+              <h4>Ventas</h4>
+              <div class="t-account-content">
+                <div class="debit-side">
+                  <div class="t-account-header">DEBE</div>
+                  <div class="t-account-total">Total: $0</div>
+                </div>
+                <div class="credit-side">
+                  <div class="t-account-header">HABER</div>
+                  <div class="t-account-entry">(5) $800,000</div>
+                  <div class="t-account-entry">(7) $301,724.14</div>
+                  <div class="t-account-entry">(9) $200,000</div>
+                  <div class="t-account-total">Total: $1,301,724.14</div>
+                </div>
+              </div>
+              <div class="t-account-balance">Saldo: $1,301,724.14 (Acreedor)</div>
+            </div>
+
+            <div class="t-account">
+              <h4>IVA Trasladado</h4>
+              <div class="t-account-content">
+                <div class="debit-side">
+                  <div class="t-account-header">DEBE</div>
+                  <div class="t-account-total">Total: $0</div>
+                </div>
+                <div class="credit-side">
+                  <div class="t-account-header">HABER</div>
+                  <div class="t-account-entry">(5) $128,000</div>
+                  <div class="t-account-entry">(7) $19,310.34</div>
+                  <div class="t-account-entry">(9) $32,000</div>
+                  <div class="t-account-entry">(10) $4,344.83</div>
+                  <div class="t-account-total">Total: $183,655.17</div>
+                </div>
+              </div>
+              <div class="t-account-balance">Saldo: $183,655.17 (Acreedor)</div>
+            </div>
+
+            <div class="t-account">
+              <h4>IVA por Trasladar</h4>
+              <div class="t-account-content">
+                <div class="debit-side">
+                  <div class="t-account-header">DEBE</div>
+                  <div class="t-account-entry">(10) $4,344.83</div>
+                  <div class="t-account-total">Total: $4,344.83</div>
+                </div>
+                <div class="credit-side">
+                  <div class="t-account-header">HABER</div>
+                  <div class="t-account-entry">(7) $28,965.52</div>
+                  <div class="t-account-total">Total: $28,965.52</div>
+                </div>
+              </div>
+              <div class="t-account-balance">Saldo: $24,620.69 (Acreedor)</div>
+            </div>
+
+            <div class="t-account">
+              <h4>Costo de Ventas</h4>
+              <div class="t-account-content">
+                <div class="debit-side">
+                  <div class="t-account-header">DEBE</div>
+                  <div class="t-account-entry">(5) $560,000</div>
+                  <div class="t-account-entry">(7) $211,206.88</div>
+                  <div class="t-account-entry">(9) $140,000</div>
+                  <div class="t-account-total">Total: $911,206.88</div>
+                </div>
+                <div class="credit-side">
+                  <div class="t-account-header">HABER</div>
+                  <div class="t-account-total">Total: $0</div>
+                </div>
+              </div>
+              <div class="t-account-balance">Saldo: $911,206.88 (Deudor)</div>
+            </div>
+
+            <div class="t-account">
+              <h4>Equipo de Cómputo</h4>
+              <div class="t-account-content">
+                <div class="debit-side">
+                  <div class="t-account-header">DEBE</div>
+                  <div class="t-account-entry">(6) $130,000</div>
+                  <div class="t-account-total">Total: $130,000</div>
+                </div>
+                <div class="credit-side">
+                  <div class="t-account-header">HABER</div>
+                  <div class="t-account-total">Total: $0</div>
+                </div>
+              </div>
+              <div class="t-account-balance">Saldo: $130,000 (Deudor)</div>
+            </div>
+
+            <div class="t-account">
+              <h4>Clientes</h4>
+              <div class="t-account-content">
+                <div class="debit-side">
+                  <div class="t-account-header">DEBE</div>
+                  <div class="t-account-entry">(7) $210,000</div>
+                  <div class="t-account-total">Total: $210,000</div>
+                </div>
+                <div class="credit-side">
+                  <div class="t-account-header">HABER</div>
+                  <div class="t-account-entry">(10) $31,500</div>
+                  <div class="t-account-total">Total: $31,500</div>
+                </div>
+              </div>
+              <div class="t-account-balance">Saldo: $178,500 (Deudor)</div>
+            </div>
+          </div>
+        </details>
+
+        <details class="practice-section">
+          <summary class="practice-summary">
+            <h3>Balanza de Comprobación</h3>
+            <span class="practice-description">Verificación de la ecuación contable</span>
+          </summary>
+          <div class="journal-entries">
+            <div class="journal-entry">
+              <h4>INTERNACIONAL DEL CAFÉ SA DE CV - Balanza de Comprobación al 11 de Julio de 2024</h4>
+              <div class="journal-table">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>No.</th>
+                      <th>Cuenta</th>
+                      <th>Movimiento Deudor</th>
+                      <th>Movimiento Acreedor</th>
+                      <th>Saldo Deudor</th>
+                      <th>Saldo Acreedor</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Bancos</td>
+                      <td class="debit">$6,331,500</td>
+                      <td class="credit">$2,266,640</td>
+                      <td class="debit">$4,064,860</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Capital Social</td>
+                      <td class="debit">$0</td>
+                      <td class="credit">$5,000,000</td>
+                      <td></td>
+                      <td class="credit">$5,000,000</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>Edificios</td>
+                      <td class="debit">$1,500,000</td>
+                      <td class="credit">$0</td>
+                      <td class="debit">$1,500,000</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>IVA Acreditado</td>
+                      <td class="debit">$314,176</td>
+                      <td class="credit">$0</td>
+                      <td class="debit">$314,176</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>IVA por Acreditar</td>
+                      <td class="debit">$304,000</td>
+                      <td class="credit">$28,800</td>
+                      <td class="debit">$275,200</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td>Acreedores Diversos</td>
+                      <td class="debit">$208,800</td>
+                      <td class="credit">$1,090,632</td>
+                      <td></td>
+                      <td class="credit">$881,832</td>
+                    </tr>
+                    <tr>
+                      <td>7</td>
+                      <td>Documentos por Pagar</td>
+                      <td class="debit">$0</td>
+                      <td class="credit">$46,632</td>
+                      <td></td>
+                      <td class="credit">$46,632</td>
+                    </tr>
+                    <tr>
+                      <td>8</td>
+                      <td>Mobiliario y Equipo</td>
+                      <td class="debit">$110,000</td>
+                      <td class="credit">$0</td>
+                      <td class="debit">$110,000</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>9</td>
+                      <td>Mercancías</td>
+                      <td class="debit">$2,000,000</td>
+                      <td class="credit">$911,206.88</td>
+                      <td class="debit">$1,088,793.12</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>10</td>
+                      <td>Proveedores</td>
+                      <td class="debit">$0</td>
+                      <td class="credit">$1,160,000</td>
+                      <td></td>
+                      <td class="credit">$1,160,000</td>
+                    </tr>
+                    <tr>
+                      <td>11</td>
+                      <td>Ventas</td>
+                      <td class="debit">$0</td>
+                      <td class="credit">$1,301,724.14</td>
+                      <td></td>
+                      <td class="credit">$1,301,724.14</td>
+                    </tr>
+                    <tr>
+                      <td>12</td>
+                      <td>IVA Trasladado</td>
+                      <td class="debit">$0</td>
+                      <td class="credit">$183,655.17</td>
+                      <td></td>
+                      <td class="credit">$183,655.17</td>
+                    </tr>
+                    <tr>
+                      <td>13</td>
+                      <td>IVA por Trasladar</td>
+                      <td class="debit">$4,344.83</td>
+                      <td class="credit">$28,965.52</td>
+                      <td></td>
+                      <td class="credit">$24,620.69</td>
+                    </tr>
+                    <tr>
+                      <td>14</td>
+                      <td>Costo de Ventas</td>
+                      <td class="debit">$911,206.88</td>
+                      <td class="credit">$0</td>
+                      <td class="debit">$911,206.88</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>15</td>
+                      <td>Equipo de Cómputo</td>
+                      <td class="debit">$130,000</td>
+                      <td class="credit">$0</td>
+                      <td class="debit">$130,000</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>16</td>
+                      <td>Clientes</td>
+                      <td class="debit">$210,000</td>
+                      <td class="credit">$31,500</td>
+                      <td class="debit">$178,500</td>
+                      <td></td>
+                    </tr>
+                    <tr class="separator">
+                      <td colspan="6"></td>
+                    </tr>
+                    <tr>
+                      <td colspan="2"><strong>TOTALES</strong></td>
+                      <td class="debit"><strong>$11,976,504.71</strong></td>
+                      <td class="credit"><strong>$11,976,504.71</strong></td>
+                      <td class="debit"><strong>$8,062,335.88</strong></td>
+                      <td class="credit"><strong>$8,062,335.88</strong></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="verification-summary">
+            <h4>Verificación de la Balanza de Comprobación</h4>
+            <div class="balance-check">
+              <strong>✓ Balanza de Comprobación Balanceada</strong><br />
+              <strong>Total Deudor: $8,062,335.88 = Total Acreedor: $8,062,335.88</strong><br />
+            </div>
+          </div>
+        </details>
+      </div>
+    </div>
+  </body>
+</html>
